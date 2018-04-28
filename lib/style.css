@@ -1,0 +1,21 @@
+body {
+  background: url("background.jpg") no-repeat 50% 0 fixed;
+  background-size: cover;
+  margin: 0 auto; }
+
+header {
+  border-bottom: 1px solid black; }
+  header .subtitle {
+    display: block;
+    font-size: 1rem; }
+
+article {
+  margin-top: 1em;
+  min-height: 75vh; }
+  article h1, article h2, article h3, article h4, article h5, article h6 {
+    text-decoration: underline; }
+
+footer .copyright {
+  font-size: 0.8rem; }
+
+/*# sourceMappingURL=style.css.map */
