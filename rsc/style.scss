@@ -1,15 +1,32 @@
 body {
-  background:url('background.jpg') no-repeat 50% 0 fixed;
-  background-size: cover;
+  background-color: rgb(212, 225, 231);
   margin: 0 auto;
+
+  &.bg-light {
+    background: url('background.jpg') no-repeat 50% 0;
+    background-size: cover;
+    color: rgb(64, 64, 64);
+    text-shadow: 0 0 4px rgb(192, 192, 192);
+  }
+
+  &.bg-dark {
+    background: url('background.jpg') no-repeat 50% 100%;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 4px rgb(255, 255, 255);
+  }
 }
 
 header {
-  border-bottom: 1px solid rgb(0,0,0);
+  border-bottom: 1px solid rgb(0, 0, 0);
 
   .subtitle {
     display: block;
     font-size: 1rem;
+  }
+
+  .brand-image {
+    width: 35px;
   }
 }
 
@@ -28,4 +45,8 @@ footer {
   .copyright {
     font-size: 0.8rem;
   }
+}
+
+.hidden {
+  display: none;
 }

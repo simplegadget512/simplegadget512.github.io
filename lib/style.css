@@ -1,13 +1,24 @@
 body {
-  background: url("background.jpg") no-repeat 50% 0 fixed;
-  background-size: cover;
+  background-color: #d4e1e7;
   margin: 0 auto; }
+  body.bg-light {
+    background: url("background.jpg") no-repeat 50% 0;
+    background-size: cover;
+    color: #404040;
+    text-shadow: 0 0 4px silver; }
+  body.bg-dark {
+    background: url("background.jpg") no-repeat 50% 100%;
+    background-size: cover;
+    color: white;
+    text-shadow: 0 0 4px white; }
 
 header {
   border-bottom: 1px solid black; }
   header .subtitle {
     display: block;
     font-size: 1rem; }
+  header .brand-image {
+    width: 35px; }
 
 article {
   margin-top: 1em;
@@ -17,5 +28,8 @@ article {
 
 footer .copyright {
   font-size: 0.8rem; }
+
+.hidden {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */
