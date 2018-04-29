@@ -13,22 +13,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="lib/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
 </head>
 <body class="bg-light">
 <div class="container-fluid">
     <header>
         <nav class="navbar">
-            <span class="navbar-brand"><img src="icon.png" class="brand-image"></span>
+            <span class="navbar-brand"><img src="banner.png" class="brand-image"></span>
             <noscript>Live a little. Turn on Javascript.</noscript>
-            <form id="toggler" class="form-inline hidden">
+            <form id="toggler" class="form-inline d-none">
                 <div class="btn-group">
-                    <button id="bg-l" class="btn btn-sm btn-outline-success active" type="button">L</button>
-                    <button id="bg-d" class="btn btn-sm btn-outline-success" type="button">D</button>
+                    <button id="bg-l" class="btn btn-vsm btn-outline-success btn-sm active" type="button"><i class="far fa-circle"></i></button>
+                    <button id="bg-d" class="btn btn-vsm btn-outline-success btn-sm" type="button"><i class="fas fa-circle"></i></button>
                 </div>
             </form>
         </nav>
     </header>
     <article class="row">
+        <div class="col">
+            <h6>Howdy, stranger!</h6>
+            <p>Welcome to my page here on github. Sorry, not much here. That's all I got to say about that.</p>
+            <p>Well, for now, anyway.</p>
+            <p>If you want a custom github page designed, ping me
+                <strong>simplegadget512 AT gmail</strong> to start the conversation.</p>
+        </div>
         <div class="col">
             <h6>public projects</h6>
             <ul class="list-unstyled">
@@ -50,20 +58,11 @@
                 <li>Python</li>
             </ul>
         </div>
-        <div class="col">
-            <h6>Howdy, stranger!</h6>
-            <p>Welcome to my page here on github. Sorry, not much here. That's all I got to say about that.</p>
-            <p>Well, for now, anyway.</p>
-            <p>If you want a custom github page designed, ping me
-                <strong>simplegadget512 AT gmail</strong> to start the conversation.</p>
-        </div>
     </article>
     <footer class="row">
         <div class="col">
-            <p class="copyright">&copy; 2018 albert freeman, all rights reserved<br>partially powered by <a
-                    href="https://www.bootstrapcdn.com">BootstrapCDN</a><br>Photo: <em>Turks and Caicos Islands</em> by
-                <a
-                        href="https://unsplash.com/photos/P8VMwYFY-Es?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Romello Williams</a> on
+            <p class="copyright">&copy; 2018 albert freeman, all rights reserved<br>partially powered by <a href="https://www.bootstrapcdn.com">BootstrapCDN</a><br><i class="fas fa-camera-retro"></i> <em>Turks and Caicos Islands</em> by
+                <a href="https://unsplash.com/photos/P8VMwYFY-Es?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Romello Williams</a> on
                 <a href="https://unsplash.com/search/photos/blue?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
             </p>
         </div>
@@ -75,7 +74,7 @@
 
             // hide our pleading
             $('noscript').hide();
-            $('#toggler').removeClass('hidden');
+            $('#toggler').removeClass('d-none');
 
             // do amazing stuff
             $('#bg-l').on('click', function () {

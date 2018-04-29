@@ -1,3 +1,7 @@
+.navbar {
+  padding: 0;
+}
+
 body {
   background-color: rgb(212, 225, 231);
   margin: 0 auto;
@@ -10,7 +14,7 @@ body {
   }
 
   &.bg-dark {
-    background: url('background.jpg') no-repeat 50% 100%;
+    background: url('background.jpg') no-repeat 50% 90%;
     background-size: cover;
     color: rgb(255, 255, 255);
     text-shadow: 0 0 4px rgb(255, 255, 255);
@@ -26,7 +30,7 @@ header {
   }
 
   .brand-image {
-    width: 35px;
+    height: 35px;
   }
 }
 
@@ -47,6 +51,9 @@ footer {
   }
 }
 
-.hidden {
-  display: none;
+button {
+  &.btn-vsm {
+    line-height: 0.5rem;
+    padding: 0.5rem 0.5rem;
+  }
 }
