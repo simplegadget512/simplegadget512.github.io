@@ -3,24 +3,17 @@
 
 body {
   background-color: #d4e1e7;
-  margin: 0 auto; }
-  body.bg-light {
-    background: url("background.jpg") no-repeat 50% 0;
-    background-size: cover;
-    color: #404040;
-    text-shadow: 0 0 4px silver; }
-    body.bg-light a {
-      color: #4040ff; }
-  body.bg-dark {
-    background: url("background.jpg") no-repeat 50% 90%;
-    background-size: cover;
-    color: white;
-    text-shadow: 0 0 4px white; }
-    body.bg-dark a {
-      color: #80ff80; }
+  margin: 0 auto;
+  background: url("adam-birkett-208251-unsplash.jpg") no-repeat 100% 0%;
+  background-size: cover;
+  color: white; }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    color: rgba(255, 255, 255, 0.75); }
+  body a {
+    color: rgba(255, 255, 255, 0.75); }
 
 header {
-  border-bottom: 1px solid black; }
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
   header .subtitle {
     display: block;
     font-size: 1rem; }
@@ -28,14 +21,15 @@ header {
     height: 35px; }
 
 article {
-  border-bottom: 1px solid black;
   margin-top: 1em;
   min-height: 75vh; }
   article h1, article h2, article h3, article h4, article h5, article h6 {
     text-decoration: underline; }
 
-footer .copyright {
-  font-size: 0.8rem; }
+footer {
+  font-size: 0.75rem; }
+  footer .copyright {
+    font-size: 0.75rem; }
 
 button.btn-vsm {
   line-height: 0.5rem;

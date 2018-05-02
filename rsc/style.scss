@@ -1,3 +1,6 @@
+$text-light: rgb(255, 255, 255);
+$text-dark: rgb(0, 0, 0);
+
 .navbar {
   padding: 0;
 }
@@ -6,31 +9,21 @@ body {
   background-color: rgb(212, 225, 231);
   margin: 0 auto;
 
-  &.bg-light {
-    background: url('background.jpg') no-repeat 50% 0;
-    background-size: cover;
-    color: rgb(64, 64, 64);
-    text-shadow: 0 0 4px rgb(192, 192, 192);
+  background: url('adam-birkett-208251-unsplash.jpg') no-repeat 100% 0%;
+  background-size: cover;
+  color: $text-light;
 
-    a {
-      color: rgb(64, 64, 256);
-    }
+  h1, h2, h3, h4, h5, h6 {
+    color: transparentize($text-light, .25);
   }
 
-  &.bg-dark {
-    background: url('background.jpg') no-repeat 50% 90%;
-    background-size: cover;
-    color: rgb(255, 255, 255);
-    text-shadow: 0 0 4px rgb(255, 255, 255);
-
-    a {
-      color: rgb(128, 256, 128);
-    }
+  a {
+    color: transparentize($text-light, .25);
   }
 }
 
 header {
-  border-bottom: 1px solid rgb(0, 0, 0);
+  border-bottom: 1px solid transparentize($text-light, .50);
 
   .subtitle {
     display: block;
@@ -43,7 +36,6 @@ header {
 }
 
 article {
-  border-bottom: 1px solid rgb(0, 0, 0);
 
   margin: {
     top: 1em;
@@ -58,8 +50,10 @@ article {
 }
 
 footer {
+  font-size: 0.75rem;
+
   .copyright {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 }
 

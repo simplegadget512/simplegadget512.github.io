@@ -21,12 +21,6 @@
         <nav class="navbar">
             <span class="navbar-brand"><img src="banner.png" class="brand-image" alt="SimpleGadget512"></span>
             <noscript>Live a little. Turn on Javascript. I gotta guy.</noscript>
-            <form id="toggler" class="form-inline d-none">
-                <div class="btn-group">
-                    <button id="bg-l" class="btn btn-vsm btn-outline-success btn-sm active" type="button"><i class="far fa-circle"></i></button>
-                    <button id="bg-d" class="btn btn-vsm btn-outline-success btn-sm" type="button"><i class="fas fa-circle"></i></button>
-                </div>
-            </form>
         </nav>
     </header>
     <article class="row">
@@ -96,7 +90,7 @@
     <footer class="row">
         <div class="col-md-8 text-center text-md-left">
             <p class="copyright">&copy; 2018 albert freeman, all rights reserved<br>partially powered by <a href="https://www.bootstrapcdn.com">BootstrapCDN</a><br><i class="fas fa-camera-retro"></i> <em>Turks and Caicos Islands</em> by
-                <a href="https://unsplash.com/photos/P8VMwYFY-Es?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Romello Williams</a> on
+                <a href="https://unsplash.com/photos/8ZeZxNDN3m4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Adam Birkett</a> on
                 <a href="https://unsplash.com/search/photos/blue?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
             </p>
         </div>
@@ -104,33 +98,6 @@
             <p>This site is conformant.</p>
         </div>
     </footer>
-    <script>
-        $(document).ready(function () {
-
-            var $_b = $('body');
-
-            // hide our pleading
-            $('noscript').hide();
-            $('#toggler').removeClass('d-none');
-
-            // do amazing stuff
-            $('#bg-l').on('click', function () {
-                if ($_b.hasClass('bg-dark')) {
-                    $('#bg-d').removeClass('active');
-                    $('body').removeClass('bg-dark').addClass('bg-light');
-                    $('#bg-l').addClass('active');
-                }
-            });
-            $('#bg-d').on('click', function () {
-                if ($_b.hasClass('bg-light')) {
-                    $('#bg-l').removeClass('active');
-                    $('body').removeClass('bg-light').addClass('bg-dark');
-                    $('#bg-d').addClass('active');
-                }
-            });
-
-        });
-    </script>
 </div>
 </body>
 </html>
