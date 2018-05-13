@@ -13,7 +13,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="lib/style.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"
+            integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
+            crossorigin="anonymous"></script>
 </head>
 <body class="bg-light">
 <div class="container-fluid">
@@ -44,52 +46,56 @@
                     <a href="https://github.com/simplegadget512/Vagrantfiles">Vagrantfiles</a> - customized vagrant setup
                 </li>
             </ul>
-            <h6>Interests</h6>
-            <ul class="list-unstyled">
-                <li>Accessibility</li>
-                <li>Javascript</li>
-                <li>Julia (the language, not the girl)</li>
-                <li>MySQL</li>
-                <li>PHP</li>
-                <li>Python</li>
-                <li>UI/UX</li>
-            </ul>
-            <h6>Stacks</h6>
-            <ul class="list-unstyled">
-                <li>LAMP</li>
-                <li>MEAN</li>
-            </ul>
-            <h6>Tools</h6>
-            <ul class="list-unstyled">
-                <li>1Password</li>
-                <li>FreeBSD</li>
-                <li>Kaleidoscope</li>
-                <li>MacOS (<i class="fab fa-apple"></i>)</li>
-                <li>MySQLWorkbench (for big projects)</li>
-                <li>PHPStorm</li>
-                <li>PyCharm</li>
-                <li>SASS</li>
-                <li>Sequel Pro (for quick stuff)</li>
-                <li>VirtualBox</li>
-                <li>WebStorm</li>
-                <li>zsh</li>
-            </ul>
-            <h6>Toys</h6>
-            <ul class="list-unstyled">
-                <li>Logic Pro (<i class="fab fa-apple"></i>)</li>
-                <li>Reason</li>
-                <li>Rhino</li>
-                <li>Unity</li>
-            </ul>
             <h6>Gists</h6>
             <ul class="list-unstyled">
-                <li><a href="https://gist.github.com/simplegadget512/869f42aa756bcbbee68aa2705b8eed52">Fizzbuzz in MySQL</a></a></li>
+                <li>
+                    <a href="https://gist.github.com/simplegadget512/869f42aa756bcbbee68aa2705b8eed52">Fizzbuzz in MySQL</a></a>
+                </li>
             </ul>
+            <h6>Interests</h6>
+            <p>
+                <span class="badge badge-pill badge-info">Accessibility</span>
+                <span class="badge badge-pill badge-info">Javascript</span>
+                <span class="badge badge-pill badge-info">MySQL</span>
+                <span class="badge badge-pill badge-info">PHP</span>
+                <span class="badge badge-pill badge-info">Python</span>
+                <span class="badge badge-pill badge-info">React</span>
+                <span class="badge badge-pill badge-info">UI/UX</span>
+            </p>
+            <h6>Stacks</h6>
+            <p>
+                <span class="badge badge-pill badge-info">LAMP</span>
+                <span class="badge badge-pill badge-info">MEAN</span>
+            </p>
+            <h6>Tools</h6>
+            <p>
+                <span class="badge badge-pill badge-info">1Password</span>
+                <span class="badge badge-pill badge-info">FreeBSD</span>
+                <span class="badge badge-pill badge-info">Kaleidoscope</span>
+                <span class="badge badge-pill badge-info">MacOS (<i class="fab fa-apple"></i>)</span>
+                <span class="badge badge-pill badge-info">MySQLWorkbench (for big projects)</span>
+                <span class="badge badge-pill badge-info">PHPStorm</span>
+                <span class="badge badge-pill badge-info">PyCharm</span>
+                <span class="badge badge-pill badge-info">SASS</span>
+                <span class="badge badge-pill badge-info">Sequel Pro (for quick stuff)</span>
+                <span class="badge badge-pill badge-info">VirtualBox</span>
+                <span class="badge badge-pill badge-info">WebStorm</span>
+                <span class="badge badge-pill badge-info">zsh</span>
+            </p>
+            <h6>Toys</h6>
+            <p>
+                <span class="badge badge-pill badge-info">Logic Pro (<i class="fab fa-apple"></i>)</span>
+                <span class="badge badge-pill badge-info">Reason</span>
+                <span class="badge badge-pill badge-info">Rhino</span>
+                <span class="badge badge-pill badge-info">Unity</span>
+            </p>
         </div>
     </article>
     <footer class="row">
         <div class="col-md-8 text-center text-md-left">
-            <p class="copyright">&copy; 2018 albert freeman, all rights reserved<br>partially powered by <a href="https://www.bootstrapcdn.com">BootstrapCDN</a><br><i class="fas fa-camera-retro"></i> <em>Turks and Caicos Islands</em> by
+            <p class="copyright">&copy; 2018 albert freeman, all rights reserved<br>partially powered by <a
+                    href="https://www.bootstrapcdn.com">BootstrapCDN &amp; JQuery</a><br><i class="fas fa-camera-retro"></i>
+                <em>Whats out there?</em> by
                 <a href="https://unsplash.com/photos/8ZeZxNDN3m4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Adam Birkett</a> on
                 <a href="https://unsplash.com/search/photos/blue?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
             </p>
@@ -98,6 +104,18 @@
             <p>This site is conformant.</p>
         </div>
     </footer>
+    <script>
+        $(document).ready(function() {
+
+            var $_h = window.location.hostname;
+            $('a').each(function(i, $_l) {
+                if ($_l.hostname != $_h) {
+                    $($_l).append($(' <i>').addClass('fas fa-external-link-alt'));
+                }
+            });
+
+        });
+    </script>
 </div>
 </body>
 </html>
